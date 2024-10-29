@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide the scrollbar while keeping the functionality */
+.custom-scrollbar {
+    overflow-y: scroll; /* Keep the scroll functionality */
+  }
+  
+  /* For WebKit browsers (Chrome, Safari, etc.) */
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none; /* Completely hide the scrollbar */
+  }
+  
+  /* For Firefox */
+  .custom-scrollbar {
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+  }
+  
+  /* For Edge and Internet Explorer */
+  .custom-scrollbar {
+    -ms-overflow-style: none; /* Hide scrollbar for Edge and IE */
+  }
+  
